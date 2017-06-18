@@ -1,0 +1,9 @@
+{
+  "name": "base.js",
+  "version": "0.1.0",
+  "description": "base template for production application.",
+  "main": "src/index.js",
+  "repository": "https://github.com/jimzhan/base.js",
+  "author": "Jim Zhan <jim.zhan@me.com>",
+  "license": "Apache-2.0"
+}
