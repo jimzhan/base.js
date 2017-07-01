@@ -13,7 +13,12 @@
   "scripts": {
     "lint": "eslint --ext=.js src test",
     "docs": "apidoc -i src -o docs/ && serve docs",
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/index.js",
+    "patch": "npm version patch",
+    "postpatch": "npm run pushtags",
+    "minor": "npm version minor",
+    "postminor": "npm run pushtags",
+    "pushtags": "git push --tags"
   },
   "dependencies": {
     "app-module-path": "^2.2.0",
