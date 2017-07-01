@@ -1,6 +1,6 @@
 {
   "name": "base.js",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "apidoc": {
     "title": "Base.js API DOC Browser",
     "url": "http://localhost:3000/v1"
