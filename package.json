@@ -15,10 +15,10 @@
     "docs": "apidoc -i src -o docs/ && serve docs",
     "start": "nodemon src/index.js",
     "patch": "npm version patch",
-    "postpatch": "npm run pushtags",
+    "postpatch": "npm run publish",
     "minor": "npm version minor",
-    "postminor": "npm run pushtags",
-    "pushtags": "git push --tags",
+    "postminor": "npm run publish",
+    "publish": "git push --tags && npm publish",
     "[TEST]": "======= Test case runner suites =======",
     "pretest": "npm run lint",
     "test": "mocha --require ignore-styles --compilers js:babel-core/register --recursive test/**/*.spec.js src/**/*.spec.js"
