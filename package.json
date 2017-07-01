@@ -18,19 +18,26 @@
     "postpatch": "npm run pushtags",
     "minor": "npm version minor",
     "postminor": "npm run pushtags",
-    "pushtags": "git push --tags"
+    "pushtags": "git push --tags",
+    "[TEST]": "======= Test case runner suites =======",
+    "pretest": "npm run lint",
+    "test": "mocha --require ignore-styles --compilers js:babel-core/register --recursive test/**/*.spec.js src/**/*.spec.js"
   },
   "dependencies": {
     "app-module-path": "^2.2.0",
     "assert": "^1.4.1",
     "axios": "^0.16.2",
+    "chai": "^4.0.2",
     "dotenv": "^4.0.0",
     "glob": "^7.1.2",
     "http-status-codes": "^1.1.6",
+    "ignore-styles": "^5.0.1",
     "koa": "^2.3.0",
     "koa-body": "^2.3.0",
     "koa-jwt": "^3.2.2",
     "koa-router": "^7.2.1",
+    "mocha": "^3.4.2",
+    "supertest": "^3.0.0",
     "winston": "^2.3.1"
   },
   "devDependencies": {
