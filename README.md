@@ -42,6 +42,14 @@ export default {
   'DELETE /:key', views.delete,
 }
 ```
+* module alias support
+
+```javascript
+// Use this:
+import MyUtilFn from 'utils/MyUtilFn';
+// Instead of that:
+import MyUtilFn from '../../../../utils/MyUtilFn';
+```
 
 TODOs
 =====

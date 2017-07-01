@@ -1,6 +1,6 @@
 import assert from 'assert';
 import koajwt from 'koa-jwt';
-import settings from '../settings';
+import settings from 'settings';
 
 
 export default function jwt(options = {}) {

@@ -1,3 +1,4 @@
+import 'app-module-path/register';
 import Koa from 'koa';
 import logger from 'winston';
 import bootstrap from './apps';

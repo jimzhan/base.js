@@ -22,9 +22,7 @@ module.exports = {
   // check if imports actually resolve
   settings: {
     'import/resolver': {
-      webpack: {
-        config: 'etc/webpack.base.js'
-      }
+      'babel-module': {},
     }
   },
   // add your custom rules here

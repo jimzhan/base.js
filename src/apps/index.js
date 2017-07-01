@@ -3,7 +3,7 @@ import path from 'path';
 import Body from 'koa-body';
 import Router from 'koa-router';
 import logger from 'winston';
-import settings from '../settings';
+import settings from 'settings';
 
 /**
  * Bootstrap automatically loads all the applications under `apps` folders
