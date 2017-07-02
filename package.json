@@ -13,11 +13,9 @@
   "scripts": {
     "lint": "eslint --ext=.js src test",
     "docs": "apidoc -i src -o docs/ && serve docs",
-    "[DEVELOP]": "====== Dev server with hotreload supports =======",
+    "[PROFILES]": "====== Dev server with hotreload supports =======",
     "start": "cross-env NODE_ENV=develop nodemon src/index.js",
-    "[STAGING]": "======= [PM2] Staging server with static assets supports =======",
     "staging": "cross-env NODE_ENV=staging pm2 start --name staging --interpreter babel-node src/index.js",
-    "[RELEASE]": "======= [PM2] Production server =======",
     "release": "cross-env NODE_ENV=release pm2 start --name release --interpreter babel-node src/index.js",
     "[VERSION]": "======= Semantic Versioning =======",
     "patch": "npm version patch",
@@ -31,7 +29,6 @@
   },
   "dependencies": {
     "apidoc": "^0.17.6",
-    "app-module-path": "^2.2.0",
     "assert": "^1.4.1",
     "axios": "^0.16.2",
     "chai": "^4.0.2",
