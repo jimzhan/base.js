@@ -22,7 +22,7 @@
     "publish": "git push --tags",
     "[TEST]": "======= Test case runner suites =======",
     "pretest": "npm run lint",
-    "test": "mocha --require ignore-styles --compilers js:babel-core/register --recursive test/**/*.spec.js src/**/*.spec.js"
+    "test": "mocha --timeout 10000 --require ignore-styles --compilers js:babel-core/register --recursive test/**/*.spec.js src/**/*.spec.js"
   },
   "dependencies": {
     "apidoc": "^0.17.6",

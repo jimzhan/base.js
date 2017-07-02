@@ -2,7 +2,6 @@ import glob from 'glob';
 import path from 'path';
 import Body from 'koa-body';
 import Router from 'koa-router';
-import logger from 'winston';
 import settings from 'settings';
 
 /**
@@ -42,7 +41,6 @@ export default function bootstrap(server) {
         router[method.toLowerCase()](pattern, body, views);
       }
       server.use(router.routes()).use(router.allowedMethods());
-      logger.debug(`[${method}] ${baseUrl}${pattern}`);
     });
   });
 }

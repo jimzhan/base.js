@@ -14,6 +14,7 @@ Production application boilerplate for Koa, batteries included:
 + [Yarn](https://yarnpkg.com/en/) Dependency management.
 + [Koa.js](https://github.com/koajs/koa) Next generation web framework.
 + [Dotenv](https://github.com/motdotla/dotenv) Production settings profile solution.
++ [JSON Web Tokens](https://jwt.io/) Industry standard RFC 7519 method for representing claims securely between two parties.
 
 ## Key NPM Scripts
 * `npm start` - start Koa with hot reload supports (default port `3000`).
@@ -21,6 +22,7 @@ Production application boilerplate for Koa, batteries included:
 
 ## Batteries included 
 * configurable prefixed server endpoint (`/v1` by default).
+* JWT based authentication.
 * common middleware.
 * intelligent/automatic config registration.
 * intelligent/automatic routes registration.
