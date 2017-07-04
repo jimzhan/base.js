@@ -20,7 +20,7 @@ Production application boilerplate for Koa, batteries included:
 * `npm start` - start Koa with hot reload supports (default port `3000`).
 * `npm run docs` - generate API docs in `docs` folder (ignored by git) & start serving.
 
-## Batteries included 
+## Batteries included
 * configurable prefixed server endpoint (`/v1` by default).
 * JWT based authentication.
 * common middleware.
@@ -60,6 +60,7 @@ TODOs
 - [x] `dotenv` based multi settings profiles at server side.
 - [x] Grouped routing system.
 - [x] Grouped settings system.
-- [x] unit test integration
-- [x] hot reload koa server
+- [x] unit test integration.
+- [x] hot reload koa server.
+- [ ] PM2 ecosystem integration.
 - [ ] common helpers.
