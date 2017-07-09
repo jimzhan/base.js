@@ -33,8 +33,9 @@ describe('[apps][auth]', () => {
       const username = 'Karley_Dach@jasper.info';
       const password = 'Leopoldo_Corkery';
       const response = await request.post(baseUrl).send({ username, password });
-      expect(response.status).to.equal(Status.OK);
-      expect(response.header.authorization).to.match(/Bearer\s(.*)/);
+      expect(response.status).to.equal(Status.RESET_CONTENT);
+      // eslint-disable-next-line
+      expect(response.get(settings.cookie.name)).not.to.be.null;
     });
   });
 });
