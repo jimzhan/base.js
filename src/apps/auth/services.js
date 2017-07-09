@@ -1,5 +1,7 @@
 import axios from 'axios';
-import logger from 'winston';
+import jwt from 'jsonwebtoken';
+import Status from 'http-status-codes';
+import settings from 'settings';
 
 const endpoint = 'https://jsonplaceholder.typicode.com/users';
 
@@ -13,6 +15,13 @@ export async function authenticate(params) {
   return (Array.isArray(result) && result.length === 1) ? result[0] : result;
 }
 
-export async function somethingelse(params) {
-  logger.debug(params);
+/**
+ * Authorize the authenticated user by issuing access token back to cookie. 
+ * @param {Object} ctx koa context.
+ * @param {Object} user plain JS object for creating access token.
+ */
+export async function authorize(ctx, user) {
+  const token = jwt.sign(user, settings.secret);
+  ctx.cookies.set(settings.cookie.name, token);
+  ctx.status = Status.RESET_CONTENT;
 }

@@ -8,6 +8,9 @@
     "stage-2"
   ],
   "plugins": [
+    "transform-class-properties",
+    "transform-decorators-legacy",
+    "transform-decorators",
     "transform-runtime",
     ["module-resolver", {
       "root": ["./src"],
