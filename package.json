@@ -1,0 +1,13 @@
+{
+  "name": "base.js",
+  "version": "1.0.0",
+  "description": "An opinionated Web application startup kit with a set of best practices.",
+  "main": "index.js",
+  "repository": "https://github.com/jimzhan/base.js",
+  "author": "Jim Zhan <jim.zhan@me.com>",
+  "license": "Apache-2.0",
+  "private": true,
+  "workspaces": [
+    "workspace/*"
+  ]
+}
