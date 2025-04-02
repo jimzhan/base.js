@@ -1,11 +1,10 @@
 # Base.js
-An opinionated Web application startup kit with a set of best practices.
 
+An opinionated Web application startup kit with a set of best practices.
 
 ## Prerequisites
 
 - [Podman](https://podman.io/) for local development
-
 
 ## Foundations
 
@@ -15,8 +14,7 @@ An opinionated Web application startup kit with a set of best practices.
 - **Test Runner** [Ava](https://github.com/avajs/ava)
 - **Web Server** [hapi](https://hapi.dev/)
 - **i18n** [i18next](https://www.i18next.com/)
-- **Monorepo** [Yarn Workspaces](https://yarnpkg.com/features/workspaces)
-
+- **Monorepo** [NPM Workspaces](https://docs.npmjs.com/cli/v11/using-npm/workspaces)
 
 ## TODOs
 
@@ -27,12 +25,10 @@ An opinionated Web application startup kit with a set of best practices.
 - [ ] Server-Sent Event supports
 - [ ] Standard Log (refer to [AWS Logging](https://docs.aws.amazon.com/prescriptive-guidance/latest/logging-monitoring-for-application-owners/event-attributes.html))
 
-
 ## Configuration Profiles
 
 1. `process.env.NODE_ENV=development` - for local development ONLY, relevant services will be running with containers.
 2. `process.env.NODE_ENV=production` - for production deployment, relevant services will be running with actual production services.
 3. `process.env.NODE_ENV=test` - for test environment ONLY, relevant services will be running with mock services.
-
 
 ## Folder Structrure (Grouped by Features)
