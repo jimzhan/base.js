@@ -134,3 +134,8 @@ dist
 
 # test dbs
 test.sqlite3
+
+
+
+.nx/cache
+.nx/workspace-data

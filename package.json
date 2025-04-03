@@ -2,7 +2,6 @@
   "name": "base.js",
   "type": "module",
   "version": "1.0.0",
-  "packageManager": "yarn@4.8.1",
   "description": "An opinionated Web application startup kit with a set of best practices.",
   "main": "index.js",
   "repository": "https://github.com/jimzhan/base.js",
@@ -14,9 +13,10 @@
     "npm": ">=11.0.0"
   },
   "workspaces": [
-    "workspace/*"
+    "packages/*"
   ],
-  "dependencies": {
-    "eslint": "^9.23.0"
+  "devDependencies": {
+    "joi": "^17.13.3",
+    "nx": "20.7.1"
   }
 }

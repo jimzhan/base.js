@@ -14,7 +14,7 @@ An opinionated Web application startup kit with a set of best practices.
 - **Test Runner** [Ava](https://github.com/avajs/ava)
 - **Web Server** [hapi](https://hapi.dev/)
 - **i18n** [i18next](https://www.i18next.com/)
-- **Monorepo** [NPM Workspaces](https://docs.npmjs.com/cli/v11/using-npm/workspaces)
+- **Monorepo** [NX Monorepos](https://nx.dev/)
 
 ## TODOs
 

@@ -4,6 +4,7 @@
 		"{coverage,examples,media,test,test-types,test-tap,types,settings}/**",
 		"ava.config.js",
     "eslint.config.js",
+    ".eslintrc",
     "**/*.spec.js",
     "**/index.js"
 	],
