@@ -1,5 +1,5 @@
 import Exiting from 'exiting'
-import { server } from './server/index.js'
+import { server } from './server/index.js';
 
 try {
   const manager = Exiting.createManager(server)

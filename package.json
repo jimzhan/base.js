@@ -9,7 +9,14 @@
   "author": "Jim Zhan <jim.zhan@me.com>",
   "license": "Apache-2.0",
   "private": true,
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=11.0.0"
+  },
   "workspaces": [
     "workspace/*"
-  ]
+  ],
+  "dependencies": {
+    "eslint": "^9.23.0"
+  }
 }
