@@ -3,7 +3,7 @@
 	"exclude": [
 		"{coverage,examples,media,test,test-types,test-tap,types,settings}/**",
 		"ava.config.js",
-    ".eslintrc.cjs",
+    "eslint.config.js",
     "**/*.spec.js",
     "**/index.js"
 	],

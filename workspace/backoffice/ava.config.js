@@ -1,7 +1,8 @@
 export default {
   files: [
     'src/**/*.spec.js',
-    '!**/*.cjs'
+    '!**/*.cjs',
+    '!eslint.config.js'
   ],
   match: [],
   concurrency: 5,
