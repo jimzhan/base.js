@@ -6,9 +6,9 @@ export default {
     plugins: [
       // hapi plugins
       // { plugin: pino, options: { redact: ['req.headers.authorization'] } },
-      { plugin: './server/plugins/i18n' },
-      { plugin: './server/plugins/swagger' },
-      { plugin: './server/plugins/tracer' }
+      { plugin: './server/plugins/i18n.js' },
+      { plugin: './server/plugins/swagger.js' },
+      { plugin: './server/plugins/tracer.js' }
       // application routes
     ]
   }

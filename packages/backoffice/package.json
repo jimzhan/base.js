@@ -25,7 +25,8 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-prettier": "^5.2.5",
-    "eslint-plugin-promise": "^6.6.0"
+    "eslint-plugin-promise": "^6.6.0",
+    "prettier": "^3.5.3"
   },
   "dependencies": {
     "@hapi/glue": "^9.0.1",
@@ -44,6 +45,7 @@
     "i18next-fs-backend": "^2.6.0",
     "i18next-http-middleware": "^3.7.1",
     "immutable": "^5.1.1",
+    "joi": "^17.13.3",
     "nanoid": "^5.1.5",
     "url-join": "^5.0.0"
   }

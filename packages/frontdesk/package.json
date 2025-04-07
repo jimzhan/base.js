@@ -1,5 +1,6 @@
 {
   "name": "frontdesk",
+  "type": "module",
   "version": "1.0.0",
   "description": "UI service",
   "main": "src/index.js",
