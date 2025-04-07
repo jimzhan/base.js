@@ -4211,11 +4211,11 @@ __metadata:
   linkType: hard
 
 "swagger-ui-dist@npm:^5.17.14":
-  version: 5.20.6
-  resolution: "swagger-ui-dist@npm:5.20.6"
+  version: 5.20.7
+  resolution: "swagger-ui-dist@npm:5.20.7"
   dependencies:
     "@scarf/scarf": "npm:=1.4.0"
-  checksum: 10c0/13d05c36398b49511b760702e9e3ff26d920ed6d526b65d701302a0b680021da35c8068c3a1652c35b660036163bbdbe4392fd67edf9a83722b462566069433f
+  checksum: 10c0/4048c304144772e01bd06078652942b022aba884aca9adc7c7ecfe18ce3c30671ebf12a727e6089117fe7df230cdfc2ee5a2898141e1e66febf4fb187df0aebf
   languageName: node
   linkType: hard
 
