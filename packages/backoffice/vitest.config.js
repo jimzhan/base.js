@@ -28,6 +28,9 @@ export default defineConfig({
         'src/server/plugins/*.js'
       ],
       reporter: ['text', 'json', 'html']
+    },
+    sequence: {
+      concurrency: 5
     }
   }
 })
