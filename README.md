@@ -11,7 +11,7 @@ An opinionated Web application startup kit with a set of best practices.
 - **Configuration** [Confidence](https://www.npmjs.com/package/@hapipal/confidence)
 - **Local Infrastruture** [Kafka](https://kafka.apache.org/) + [PostgreSQL@16](https://www.postgresql.org/) + [Redis](https://redis.io/) with [Podman](https://podman.io/)
 - **SCA** [ESLint](https://eslint.org/) + [StandardJS](https://standardjs.com/)
-- **Test Runner** [Ava](https://github.com/avajs/ava)
+- **Test Runner** [Vitest](https://vitest.dev/)
 - **Web Server** [hapi](https://hapi.dev/)
 - **i18n** [i18next](https://www.i18next.com/)
 - **Monorepo** [NX Monorepos](https://nx.dev/)

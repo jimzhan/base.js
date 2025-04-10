@@ -1,11 +1,12 @@
-import test from 'ava'
 import * as fsx from './fsx.js'
 
-test('should get current filename', (t) => {
-  t.true(fsx.filename(import.meta).endsWith('fsx.spec.js'))
-})
+describe('fsx.js', () => {
+  it('should dynamically get the filename', () => {
+    expect(fsx.filename(import.meta).endsWith('fsx.spec.js')).toBe(true)
+  })
 
-test('should join path segments with current module file', (t) => {
-  t.true(fsx.join(import.meta).endsWith('core'))
-  t.true(fsx.join(import.meta, '..').endsWith('src'))
+  it('should dynamically get the dir names', async () => {
+    expect(fsx.join(import.meta).endsWith('core')).toBe(true)
+    expect(fsx.join(import.meta, '..').endsWith('src')).toBe(true)
+  })
 })

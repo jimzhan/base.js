@@ -1,11 +1,12 @@
-import test from 'ava'
 import server from './server.js'
 
-test('should compose a new server', async (t) => {
-  const response = await server.inject({
-    url: '/notfound',
-    method: 'GET',
-    payload: { foo: 'bar' }
+describe('server', () => {
+  it('should compose a new server', async () => {
+    const response = await server.inject({
+      url: '/notfound',
+      method: 'GET',
+      payload: { foo: 'bar' }
+    })
+    expect(response.statusCode).toBe(404)
   })
-  t.is(response.statusCode, 404)
 })

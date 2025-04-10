@@ -1,21 +1,22 @@
-import test from 'ava'
 import ctx from './ctx.js'
 
-test('should get an empty store', (t) => {
-  t.falsy(ctx.store)
-})
+describe('ctx.js', () => {
+  it('should get an empty store', () => {
+    expect(ctx.store).toBeUndefined()
+  })
 
-test('should get nth where ctx is empty', (t) => {
-  t.falsy(ctx.get('404'))
-})
+  it('should get nth where ctx is empty', () => {
+    expect(ctx.get('404')).toBeUndefined()
+  })
 
-test('should set value for async context', (t) => {
-  ctx.set({ abc: 'xyz' })
-  t.is(ctx.get('abc'), 'xyz')
-})
+  it('should set value for async context', () => {
+    ctx.set({ abc: 'xyz' })
+    expect(ctx.get('abc')).toBe('xyz')
+  })
 
-test('should get `bar` where ctx has `foo`', (t) => {
-  ctx.run({ foo: 'bar' }, () => {
-    t.is(ctx.get('foo'), 'bar')
+  it('should get `bar` where ctx has `foo`', () => {
+    ctx.run({ foo: 'bar' }, () => {
+      expect(ctx.get('foo')).toBe('bar')
+    })
   })
 })

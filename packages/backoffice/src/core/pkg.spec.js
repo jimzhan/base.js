@@ -1,7 +1,6 @@
-import test from 'ava'
 import pkg from './pkg.js'
 
-test('should get the package data', (t) => {
-  t.truthy(pkg)
-  t.is(pkg.type, 'module')
+test('should dynamically get the package.json', () => {
+  expect(pkg).toBeTruthy()
+  expect(pkg.type).toBe('module')
 })
