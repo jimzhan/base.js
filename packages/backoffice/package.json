@@ -12,7 +12,7 @@
   },
   "scripts": {
     "lint": "eslint --fix src/**/*.js",
-    "start": "cross-env NODE_ENV=production node --no-experimental-require-module --loader esm-module-alias/loader --no-warnings ./src/index.js",
+    "start": "cross-env NODE_ENV=production node --no-experimental-require-module ./src/index.js",
     "watch": "cross-env NODE_ENV=development nodemon  ./src/index.js",
     "test": "vitest run --coverage --pool=forks"
   },
@@ -36,18 +36,16 @@
     "@hapi/log": "^2.0.1",
     "@hapi/vision": "^7.0.3",
     "@hapi/yar": "^11.0.3",
-    "@hapipal/confidence": "^6.0.2",
     "cross-env": "^7.0.3",
-    "esm-module-alias": "^2.2.1",
     "exiting": "^7.0.0",
     "hapi-swagger": "^17.3.2",
     "http-status": "^2.1.0",
     "i18next": "^24.2.3",
     "i18next-fs-backend": "^2.6.0",
     "i18next-http-middleware": "^3.7.1",
-    "immutable": "^5.1.1",
     "joi": "^17.13.3",
     "nanoid": "^5.1.5",
+    "settings": "workspace:*",
     "ulid": "^3.0.0",
     "url-join": "^5.0.0"
   }

@@ -2,6 +2,7 @@
   "name": "base.js",
   "type": "module",
   "version": "1.0.0",
+  "packageManager": "yarn@4.9.1",
   "description": "An opinionated Web application startup kit with a set of best practices.",
   "main": "index.js",
   "repository": "https://github.com/jimzhan/base.js",

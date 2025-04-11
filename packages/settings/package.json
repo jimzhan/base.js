@@ -1,0 +1,14 @@
+{
+  "name": "settings",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Shared settings for backend services",
+  "main": "src/index.js",
+  "author": "Jim Zhan <jim.zhan@me.com>",
+  "license": "Apache-2.0",
+  "private": true,
+  "dependencies": {
+    "@hapipal/confidence": "^6.0.2",
+    "immutable": "^5.1.1"
+  }
+}
